@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-0 m-0">
+    <div class="w-{800px} h-screen">
+      <nav
+        class="flex justify-between items-center bg-slate-800 border border-b-4 border-black-400 p-5"
+      >
+        <div class="flex items-center">
+          <div>
+            <img
+              class="w-16"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png"
+            />
+          </div>
+          <div class="mx-3 font-bold text-xl">
+            <h1 class="text-white">Admin Dashboard</h1>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <ul class="flex place-items-center text-white">
+              <li class="mx-3 font-semibold text-base relative flex">
+                <div class="relative w-full flex justify-center">
+                  <input
+                    type="text"
+                    class="text-gray py-2 pr-4 pl-9 bg-slate-800 w-80 outline-none border border-gray-600 rounded-md text-sm focus:border-blue-500"
+                    placeholder="Search.."
+                  />
+                  <span
+                    class="material-symbols-outlined absolute top-1/2 left-4 -translate-y-1/2 text-gray-400"
+                  >
+                    search
+                  </span>
+                  <!-- <i
+                    class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-400"
+                  ></i> -->
+                  <button
+                    type="submit"
+                    class="py-2 px-3 outline-none bg-blue-600 text-white border-gray-50 rounded-e-md text-sm"
+                  >
+                    Search
+                  </button>
+                </div>
+              </li>
+              <li class="mx-3 hover:text-green-400 font-semibold text-base">
+                <span class="material-symbols-outlined"> person </span>
+              </li>
+              <li class="mx-3 hover:text-green-400 font-semibold text-base">
+                <span class="material-symbols-outlined"> settings </span>
+              </li>
+              <li class="mx-3 hover:text-green-400 font-semibold text-base">
+                <span class="material-symbols-outlined"> logout </span>
+              </li>
+            </ul>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <section class="grid grid-cols-5 gap-4 px-1 rounded-xl">
+        <div class="bg-slate-800 h-screen">
+          <div class="flex p-6 items-center">
+            <div>
+              <img
+                class="w-16"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png"
+              />
+            </div>
+            <div class="px-3">
+              <h1 class="font-semibold text-3xl text-white">Blogs For You</h1>
+            </div>
+          </div>
+          <div class="border border-transparent border-b-gray-500 mx-5"></div>
+          <!--  -->
+          <div class="px-6 py-6 w-96">
+            <ul class="text-white mr-4">
+              <a href="" class="">
+                <li
+                  class="flex items-center p-1 px-2 my-2 rounded-md hover:bg-gray-600 bg-gray-700"
+                >
+                  <span class="material-symbols-outlined my-4"> home </span>
+                  <p class="mx-3">Dashboard</p>
+                </li>
+              </a>
+              <a href="">
+                <li
+                  class="flex items-center p-1 px-2 my-2 rounded-md hover:bg-gray-600"
+                >
+                  <span class="material-symbols-outlined my-4"> group </span>
+                  <p class="mx-3">Users</p>
+                </li>
+              </a>
+              <a href=""></a>
+              <li
+                class="flex items-center p-1 px-2 my-2 rounded-md hover:bg-gray-600"
+              >
+                <span class="material-symbols-outlined my-4"> chat </span>
+                <p class="mx-3">Contact Us</p>
+              </li>
+              <a href="">
+                <li
+                  class="flex items-center p-1 px-2 my-2 rounded-md hover:bg-gray-600"
+                >
+                  <span class="material-symbols-outlined my-4">
+                    phone_in_talk
+                  </span>
+                  <p class="mx-3">Our Services</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-white col-span-4">2</div>
+        <div class="bg-black"></div>
+      </section>
+    </div>
+  </body>
+</html>
